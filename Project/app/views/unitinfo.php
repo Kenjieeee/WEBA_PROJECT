@@ -17,7 +17,7 @@
                 <tr>
                     <td>1</td>
                     <td>Available</td>
-                    <td><a href=""><input type="submit" value="View"></a></td>
+                    <td><a href="<?=ROOT?>/unitviewbtn"><input type="submit" value="View"></a></td>
                 </tr>
             </table>
         </div>
