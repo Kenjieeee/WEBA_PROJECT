@@ -88,6 +88,8 @@
     background-color: rgb(2, 48, 71, 1.0);
     color: white;
 }
+
+
 .addunit{
   float: right;
   padding-right: 20px;
@@ -98,7 +100,7 @@
 }
 .addunit input[type=submit]{
     background-color: rgb(230, 172, 28, 1.0);
-    width: 80px;
+    width: 100px;
     height: 40px;
     border-radius: 40px;
     cursor: pointer;
@@ -138,4 +140,63 @@
 .maincontent .textboxes input[type=submit]:hover{
     background-color: rgb(2, 48, 71, 1.0);
     color: white;
+}
+.maincontent .history{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.maincontent .history table{
+    width: 100%;
+}
+.maincontent .history th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: rgb(31, 99, 152, 1.0);
+    color: white;
+    height: 20px;
+    text-align: center;
+}
+.maincontent .history td{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    height: 20px;
+    text-align: center;
+}
+.maincontent .backbtn input[type=submit]{
+    background-color: rgb(230, 172, 28, 1.0);
+    width: 110px;
+    height: 30px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.maincontent .backbtn input[type=submit]:hover{
+    background-color: rgb(2, 48, 71, 1.0);
+    color: white;
+}
+.maincontent .moreinfotextbox{
+    border: solid 1px black;
+    width: 90%;
+    height: auto;
+    float: left;
+    padding: 50px;
+}
+.maincontent .moreinfotextbox input[type=text]{
+    width: 50%;
+    padding: 4px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.maincontent .moreinfoleft {
+    float: left;
+}
+.maincontent .moreinforight{
+    float: right;
+}
+.maincontent .moreinfoleft1{
+    float: left;
+    padding-left: 100px;
+}
+.maincontent .moreinforight1{
+    float: right;
+    padding-left: 100px;
 }

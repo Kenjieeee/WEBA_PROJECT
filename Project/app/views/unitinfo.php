@@ -15,6 +15,7 @@
                     <th>Click</th>
                 </tr>
                 <tr>
+                    <!--Looping lang dine ate ung sinasabi mo poo-->
                     <td>1</td>
                     <td>Available</td>
                     <td><a href="<?=ROOT?>/unitviewbtn"><input type="submit" value="View"></a></td>

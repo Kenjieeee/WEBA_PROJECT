@@ -1,16 +1,13 @@
 <?php include "../app/views/partials/header.php"; ?>
     <div class = "maincontent">
-        <h2>Unit Information
-            <a href="" class = "addunit">
-                <input type="submit" value="Add Unit">
-            </a>
-        </h2>
+        <h2>Unit Information</h2>
         <br><br>
         <div class = "labeladd">
             <br>
             <h2>ADD NEW UNIT</h2>
         </div>
         <div class = "textboxes">
+            <!--SHOWING DATA-->
             <label for="">UNIT NO: </label>
             <input type="text" name="unitid" placeholder = "Enter unit number">
             <br>
@@ -39,6 +36,8 @@
             <input type="text" name="unitid" placeholder = "Size of land area by m2">
             <br>
             <br>
+            <!--dito ateee add unit lahat ng data na iinput mapupunta sa
+        db table units-->
             <input type="submit" value = "Add new unit" name = "submit">
             <a href="<?=ROOT?>/unitinfo">
                 <input type="submit" value="Back" >
