@@ -107,3 +107,35 @@
     background-color: rgb(2, 48, 71, 1.0);
     color: white;
 }
+.maincontent .textboxes{
+    border: solid 1px black;
+    text-align: center;
+}
+.maincontent .labeladd{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(2, 48, 71, 1.0);
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+.maincontent .textboxes label{
+    font-size: 18px;
+}
+.maincontent .textboxes input[type=text]{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.maincontent .textboxes input[type=submit]{
+    background-color: rgb(230, 172, 28, 1.0);
+    width: 110px;
+    height: 30px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.maincontent .textboxes input[type=submit]:hover{
+    background-color: rgb(2, 48, 71, 1.0);
+    color: white;
+}

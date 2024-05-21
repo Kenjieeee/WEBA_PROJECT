@@ -1,7 +1,7 @@
 <?php include "../app/views/partials/header.php"; ?>
     <div class = "maincontent">
         <h2>Unit Information
-            <a href="" class = "addunit">
+            <a href="<?=ROOT?>/unitaddbtn" class = "addunit">
                 <input type="submit" value="Add Unit">
             </a>
         </h2>
