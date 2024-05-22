@@ -4,6 +4,10 @@ class Unitinfo extends Controller
 {
   public function index()
   {
-    $this->view('unitinfo');
+    $unit = new Unit();
+    $data = $unit->findAll();
+    $this->view('unitinfo',[
+      'data'=> $data
+    ]);
   }
 }

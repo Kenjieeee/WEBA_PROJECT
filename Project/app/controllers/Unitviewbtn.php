@@ -2,8 +2,14 @@
 
 class Unitviewbtn extends Controller
 {
-  public function index()
+  public function index($id)
   {
-    $this->view('unitviewbtn');
+    $unit = new Unit();
+    $arr['unitid'] =$id;
+    $data = $unit->where($arr);
+    $row = $data[0];
+    $this->view('unitviewbtn',[
+      'row' => $row
+    ]);
   }
 }

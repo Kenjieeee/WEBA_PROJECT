@@ -14,12 +14,13 @@
                     <th>Status</th>
                     <th>Click</th>
                 </tr>
-                <tr>
-                    <!--Looping lang dine ate ung sinasabi mo poo-->
-                    <td>1</td>
-                    <td>Available</td>
-                    <td><a href="<?=ROOT?>/unitviewbtn"><input type="submit" value="View"></a></td>
-                </tr>
+                <?php foreach($data as $row){ ?>
+                    <tr>
+                        <td><?= $row->unitid?></td>
+                        <td><?= $row->availability?></td>
+                        <td><a href="<?=ROOT?>/unitviewbtn/<?= $row->unitid?>"><input type="submit" value="View"></a></td>
+                    </tr>
+                <?php } ?>
             </table>
         </div>
     </div>
