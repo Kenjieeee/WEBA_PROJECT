@@ -44,8 +44,12 @@
             view tenant naman po magigng value po niya
             pero as of now add tenant po muna nilagay kong value dito para may laman lang
             since wala papong db -->
+            <a href="<?=ROOT?>/unittenantadd">
             <input type="submit" value ="Add tenant" name ="add" style="display: <?= ($row->availability == "Available")? "show":"none" ;?>">
+            </a>
+            <a href="<?=ROOT?>/unittenantview">
             <input type="submit" value ="View tenant" name ="view" style="display: <?= ($row->availability != "Available")? "show":"none" ;?>">
+            </a>
 
             <a href="<?=ROOT?>/unitinfo">
                 <input type="submit" value="Back" >
@@ -53,8 +57,4 @@
             <br><br>
             
         </div>
-
-
-
-
         <?php include "../app/views/partials/footer.php"; ?>

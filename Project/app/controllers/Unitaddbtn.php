@@ -27,6 +27,7 @@ class Unitaddbtn extends Controller
         <script> alert(" Added Successfully! ")</script>
       ';
     }
+    
     $this->view('unitaddbtn',[
       'currentID' => $currentID
     ]);
