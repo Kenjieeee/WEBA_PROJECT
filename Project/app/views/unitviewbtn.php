@@ -44,10 +44,10 @@
             view tenant naman po magigng value po niya
             pero as of now add tenant po muna nilagay kong value dito para may laman lang
             since wala papong db -->
-            <a href="<?=ROOT?>/unittenantadd">
+            <a href="<?=ROOT?>/unittenantadd/<?= $row->rent?>/<?= $row->unitid?>">
             <input type="submit" value ="Add tenant" name ="add" style="display: <?= ($row->availability == "Available")? "show":"none" ;?>">
             </a>
-            <a href="<?=ROOT?>/unittenantview">
+            <a href="<?=ROOT?>/unittenantview/<?= $row->unitid?>">
             <input type="submit" value ="View tenant" name ="view" style="display: <?= ($row->availability != "Available")? "show":"none" ;?>">
             </a>
 

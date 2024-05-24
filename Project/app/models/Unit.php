@@ -8,4 +8,23 @@ class Unit extends Model
 
         return $result;
     }
+
+    public function update($id, $data, $column = 'unitid')
+    {
+        $keys = array_keys($data);
+        $query = "update $this->table set ";
+
+        foreach ($keys as $key) {
+        $query .= $key . " = :" . $key . ", ";
+        }
+
+        $query = trim($query, ", ");
+
+        $query .= " where $column = :$column";
+
+        $data[$column] = $id;
+        $this->query($query, $data);
+
+        return false;
+    }
 }

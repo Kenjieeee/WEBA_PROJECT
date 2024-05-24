@@ -14,12 +14,15 @@
                     <th>Tenant Name</th>
                     <th>Click</th>
                 </tr>
+                <?php if(!empty($data)) { foreach($data as $row){?>
                 <tr>
                     <!--dito ate ung sinasabi mong mag loloop kapoo-->
-                    <td>1</td>
-                    <td>Kimberly Calumba</td>
-                    <td><a href="<?=ROOT?>/tenantmoreinfo"><input type="submit" value="More info"></a></td>
+                    <td><?=$row->unitid?></td>
+                    <td><?=$row->firstname?> <?=$row->lastname?></td>
+                    <td><a href="<?=ROOT?>/tenantmoreinfo/<?=$row->unitid?>"><input type="submit" value="More info"></a></td>
                 </tr>
+
+                <?php }}?>
             </table>
         </div>
 

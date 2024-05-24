@@ -2,8 +2,14 @@
 
 class Tenantmoreinfo extends Controller
 {
-  public function index()
+  public function index($id)
   {
-    $this->view('tenantmoreinfo');
+    $tenant = new Tenant();
+    $arr['unitid'] = $id;
+    $data = $tenant->where($arr);
+    $row = $data[0];
+    $this->view('tenantmoreinfo',[
+      'row' => $row
+    ]);
   }
 }

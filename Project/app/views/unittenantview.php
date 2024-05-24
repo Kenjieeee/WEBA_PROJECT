@@ -11,42 +11,43 @@
             <br><br>
                 <div class = "moreinfoleft" style = "padding-left: 100px;">
                     <label for="">Unit Rent Price: </label>
-                    <input type="text">
+                    <input type="text" value="<?= $row->rentpermonth ?>" readonly>
                     <br><br>
                     <label for="">Tenant ID: </label>
-                    <input type="text">
+                    <input type="text"  value="<?= $row->tenantid  ?>" readonly>
                     <br><br>
                     <label for="">First Name: </label>
-                    <input type="text">
+                    <input type="text" value="<?= $row->firstname  ?>" readonly>
                     <br><br>
                     <label for="">Last Name: </label>
-                    <input type="text">
+                    <input type="text" value="<?= $row->lastname  ?>" readonly>
                     <br><br>
                     <label for="">Rent Status: </label>
-                    <input type="text">
+                    <input type="text" value="<?= $row->status  ?>" readonly>
                     <br><br>
                     
                 </div>
                 <div class = "moreinforight" style = "padding-right: 150px;">
                     <label for="">Unit No: </label>
-                    <input type="text">
+                    <input type="text" value="<?= $row->unitid  ?>" readonly>
                     <br><br>
                     <label for="">Unit Status: </label>
-                    <input type="text">
+                    <input type="text" value="Occupied" readonly>
                     <br><br>
                     <label for="">Started Date: </label>
-                    <input type="text">
+                    <input type="text" value="<?= $row->starteddate?>" readonly>
                     <br><br>
                     <label for="">Due Date: </label>
-                    <input type="text">
+                    <input type="text" value="<?=$duedate?>"  readonly>
                     <br><br>
                 </div>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <br><br><br><br><br>
                 <br><br>
-                <a href="<?=ROOT?>/unitviewbtn">
-                    <input type="submit" value="Back" name = "backbtn">
+                <a href="<?= ROOT ?>/unitviewbtn/<?=$row->unitid?>">
+                        Back
                 </a>
+                
                 <br><br>
 
             </div>

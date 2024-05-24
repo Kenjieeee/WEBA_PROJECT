@@ -7,8 +7,13 @@ class Unitaddbtn extends Controller
     $unit = new Unit();
 
     $data =$unit->lastID();
-    $row =$data[0];
-   $currentID = ($row->unitid+1);
+    if(!empty($data)){
+      $row =$data[0];
+      $currentID = ($row->unitid+1);
+    }else{
+      $currentID = 1;
+    }
+   
 
 
     if(isset($_POST['save'])){

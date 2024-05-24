@@ -4,6 +4,11 @@ class Tenantinfo extends Controller
 {
   public function index()
   {
-    $this->view('tenantinfo');
+    $tenant = new Tenant();
+    
+    $data =  $tenant->findAll();
+    $this->view('tenantinfo',[
+      'data' => $data
+    ]);
   }
 }

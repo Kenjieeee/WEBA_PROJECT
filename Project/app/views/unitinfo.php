@@ -14,13 +14,13 @@
                     <th>Status</th>
                     <th>Click</th>
                 </tr>
-                <?php foreach($data as $row){ ?>
+                <?php if(!empty($data)){foreach($data as $row){ ?>
                     <tr>
                         <td><?= $row->unitid?></td>
                         <td><?= $row->availability?></td>
                         <td><a href="<?=ROOT?>/unitviewbtn/<?= $row->unitid?>"><input type="submit" value="View"></a></td>
                     </tr>
-                <?php } ?>
+                <?php }} ?>
             </table>
         </div>
     </div>

@@ -18,15 +18,17 @@
                     <th>Leave Date</th>
                     <th>Balance</th>
                 </tr>
+                <?php if(!empty($data)){foreach($data as $row){?>
                 <tr>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>Kimberly Calumba</td>
-                    <td>09915382110</td>
-                    <td>11/05/2023</td>
-                    <td>02/03/24</td>
-                    <td>P 2,000</td>
+                    <td><?= $row->tenantid ?></td>
+                    <td><?= $row->unitid ?></td>
+                    <td><?= $row->name ?></td>
+                    <td><?= $row->contactno?></td>
+                    <td><?= $row->starteddate?></td>
+                    <td><?= $row->leaveddate?></td>
+                    <td><?= $row->balance?></td>
                 </tr>
+                <?php }}?>
             </table>
         </div>
         <br><br>

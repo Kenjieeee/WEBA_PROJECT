@@ -12,39 +12,39 @@
             <br><br>
                 <div class = "moreinfoleft" style = "padding-left: 100px;">
                     <label for="">Unit Rent Price: </label>
-                    <input type="text">
+                    <input type="text" name="rentpermonth" value="<?=$price?>" readonly>
                     <br><br>
-                    <label for="">Tenant ID: </label>
-                    <input type="text">
+                    <!-- <label for="">Tenant ID: </label>
+                    <input type="text" >
+                    <br><br> -->
+                    <label >First Name: </label>
+                    <input type="text" name="firstname">
                     <br><br>
-                    <label for="">First Name: </label>
-                    <input type="text">
-                    <br><br>
-                    <label for="">Last Name: </label>
-                    <input type="text">
+                    <label >Last Name: </label>
+                    <input name="lastname" type="text">
                     <br><br>
                     <label for="">Civil Status: </label>
-                    <input type="text">
+                    <input name="status" type="text">
                     <br><br>
-                    <label for="">Occupation: </label>
-                    <input type="text">
+                    <label >Occupation: </label>
+                    <input name="occupation" type="text">
                     <br><br>
                 </div>
                 <div class = "moreinforight" style = "padding-right: 150px;">
                     <label for="">Contact no: </label>
-                    <input type="text">
+                    <input type="text" name="contactno">
                     <br><br>
                     <label for="">Unit Number: </label>
-                    <input type="text">
+                    <input type="text" value="<?=$unitid?>" name="unitid" readonly>
                     <br><br>
                     <label for="">No of Occupants: </label>
-                    <input type="text">
+                    <input type="text" name="occupants">
                     <br><br>
                     <label for="">Downpayment: </label>
-                    <input type="text">
+                    <input type="text" name="downpayment">
                     <br><br>
                     <label for="">Advance Payment: </label>
-                    <input type="text">
+                    <input type="text" name="advance">
                     <br><br>
                 </div>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -54,7 +54,7 @@
                 <input type="submit" value ="Add tenant" name ="add">
                 </a>
                 <a href="<?=ROOT?>/unitviewbtn">
-                    <input type="submit" value="Back" name = "backbtn">
+                    <input type="submit" value="Back" name ="backbtn">
                 </a>
                 <br><br>
 
