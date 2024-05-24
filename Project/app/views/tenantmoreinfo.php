@@ -60,7 +60,7 @@
             <br><br><br><br><br><br><br> 
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>            
             <div class = "backbtn" style = "text-align: center;">
-                <a href="">
+                <a href="<?=ROOT?>/tenantpaymenthistory">
                     <!--dito naman ate melai gagawa pako ng file pero simple lg to
                 lahat ng transaction lg nung specific id or tenant ung lalabas dine -->
                     <input type="submit" value="Payment" >
