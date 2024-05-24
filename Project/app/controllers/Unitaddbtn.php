@@ -29,7 +29,10 @@ class Unitaddbtn extends Controller
 
       $unit->insert($arr);
       echo '
-        <script> alert(" Added Successfully! ")</script>
+        <script> 
+          alert(" Added Successfully! ") 
+          window.location.href = "' . ROOT . '/unitinfo"
+          </script>
       ';
     }
     

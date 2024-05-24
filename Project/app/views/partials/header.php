@@ -21,9 +21,6 @@
       <a href="<?=ROOT?>/tenantinfo">
         <input type="button" value="Tenant Information"><br><br><br>
       </a>
-      <a href="<?=ROOT?>/cusandrepair">
-        <input type="button" value="Customize Repair"><br><br><br>
-      </a>
       <a href="<?=ROOT?>/paymentrec">
         <input type="button" value="Payment Records"><br><br><br>
       </a>

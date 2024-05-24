@@ -268,3 +268,95 @@
 .maincontent .dashboardcontainer .container .textdash{
     padding: 20px;
 }
+.maincontent .dashtotaltenant .srctxt input[type=text]{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.maincontent .paymentsubmit .tenantinfo{
+    border: solid 1px black;
+    width: 100%;
+    height: 150px;
+}
+.maincontent .dropdown select{
+    width: 130px;
+    height: 30px;
+    margin: 10px;
+    font-size: 15px;
+}
+.maincontent .dashtotalunit .history input[type=submit]{
+    margin: 10px;
+}
+.maincontent .dashtotaltenant .srctxt input[type=text]{
+    margin: 10px;
+}
+.maincontent .dashtotaltenant .backbtn input[type=submit]{
+    margin: 10px;
+}
+.maincontent .dashtotalduedate .srctxt input[type=text]{
+    margin: 10px;
+}
+.maincontent .dashtotalduedate .backbtn input[type=submit]{
+    margin: 10px;
+}
+.maincontent .paymentsubmit{
+    border: solid 1px black;
+    height: 350px;
+}
+.maincontent .paymentsubmit .infocontainer{
+    margin: 10px;
+}
+.maincontent .paymentsubmit .tenantinfo{
+    width: 50%;
+    height: 270px;
+    border: solid 1px black;
+   float: left;
+}
+.maincontent .paymentsubmit .tenantinfo .tenantinfolabel{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(31, 99, 152, 1.0);
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
+    color: white;
+}
+.maincontent .paymentsubmit .paymentsumm{
+    width: 49.5%;
+    height: 270px;
+    border: solid 1px black;
+    float: right;
+}
+.maincontent .paymentsubmit .paymentsumm .paymentsummlabel{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(31, 99, 152, 1.0);
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
+    color: white;
+}
+.maincontent .paymentsubmit .tenantinfo .tenantinfodata{
+    padding: 20px;
+    font-size: 18px;
+}
+.maincontent .paymentsubmit .tenantinfo .tenantinfodata input[type=text]{
+    width: 70%;
+    padding: 6px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.maincontent .paymentsubmit .paymentsumm .paymentsummdata{
+    padding: 20px;
+    font-size: 18px;
+}
+.maincontent .paymentsubmit .paymentsumm .paymentsummdata input[type=text], select{
+    width: 60%;
+    padding: 6px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.maincontent .history .srctxt, .backbtn input[type=submit],input[type=text]{
+    margin: 10px;
+}

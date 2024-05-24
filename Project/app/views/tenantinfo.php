@@ -2,7 +2,7 @@
     <div class = "maincontent">
         <h2>Tenant Information
         <a href="<?=ROOT?>/tenanthistory" class = "addunit">
-                <input type="submit" value="Tenant History">
+                <input type="submit" value="Tenant History"style = "width: 150px;">
             </a>
         </h2>
         
