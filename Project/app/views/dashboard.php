@@ -10,7 +10,7 @@
                         <label>Total of Units</label>
                     </div>
                     <div class = "containerbtn">
-                        <a href= "" class = "Viewbtn">
+                        <a href= "<?=ROOT?>/dashtunit" class = "Viewbtn">
                             <input type="submit" value="View">
                         </a>
                     </div>
@@ -21,7 +21,7 @@
                         <label>Total of Tenants</label>
                     </div>
                     <div class = "containerbtn">
-                        <a href= "" class = "Viewbtn">
+                        <a href= "<?=ROOT?>/dashttenants" class = "Viewbtn">
                             <input type="submit" value="View">
                         </a>
                     </div>
@@ -29,10 +29,10 @@
                 <div class = "totaldue">
                     <div class = "textdash">
                     <label class = "num">20</label><br><br>
-                    <label>Due Dates</label>
+                    <label>Due Dates <br>Today</label>
                     </div>
                     <div class = "containerbtn">
-                        <a href= "" class = "Viewbtn">
+                        <a href= "<?=ROOT?>/dashtduedate" class = "Viewbtn">
                             <input type="submit" value="View">
                         </a>
                     </div>
