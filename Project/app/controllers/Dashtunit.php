@@ -4,6 +4,22 @@ class Dashtunit extends Controller
 {
   public function index()
   {
-    $this->view('dashtunit');
+    $unit = new Unit();
+    if(isset($_POST['btnsearch'])){
+      
+      if( $_POST['availability'] == ""){
+        $data = $unit->findAll();
+      }else{
+        $arr['availability'] = $_POST['availability'];
+        $data = $unit->where($arr);
+      }
+   
+
+    }else{
+        $data = $unit->findAll();
+    }
+    $this->view('dashtunit',[
+      'data' => $data
+    ]);
   }
 }

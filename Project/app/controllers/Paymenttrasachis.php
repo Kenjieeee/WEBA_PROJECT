@@ -4,6 +4,23 @@ class Paymenttrasachis extends Controller
 {
   public function index()
   {
-    $this->view('paymenttrasachis');
+    $historytransc = new Historytransaction();
+
+  
+    if(isset($_POST['btnsearch'])){
+
+      $txtsearch = $_POST['txtsearch'];
+
+      $data = $historytransc->search($txtsearch);
+
+      
+    }else{
+      $data = $historytransc->findAll();
+    }
+
+    $this->view('paymenttrasachis',[
+      'data' => $data
+    ]);
+
   }
 }

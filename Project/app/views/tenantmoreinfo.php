@@ -57,15 +57,15 @@
                     <input type="text" name="duedate" value = "<?=$row->duedate?>"readonly>
                     <br><br>
             
-<<<<<<< HEAD
+
                 </div>
                 <br><br><br><br><br><br><br> 
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>            
                 <div class = "backbtn" style = "text-align: center;">
-                    <a href="">
+                    <a href="<?=ROOT?>/paymentsubmit/viewdata/<?=$row->unitid?>">
                         <!--dito naman ate melai gagawa pako ng file pero simple lg to
                     lahat ng transaction lg nung specific id or tenant ung lalabas dine -->
-                        <input type="submit" value="Payment" >
+                       Payment
                     </a>
                     <!--dito ate melai ireremove na ung tenant tapos
                 ung data na ireremove mo di siya permanent madedelete sa tenant history
@@ -77,29 +77,7 @@
                     </a>
                 </div>
             </form>
-=======
-            
-            
-            </div>
-            <br><br><br><br><br><br><br> 
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>            
-            <div class = "backbtn" style = "text-align: center;">
-                <a href="<?=ROOT?>/tenantpaymenthistory">
-                    <!--dito naman ate melai gagawa pako ng file pero simple lg to
-                lahat ng transaction lg nung specific id or tenant ung lalabas dine -->
-                    <input type="submit" value="Payment" >
-                </a>
-                <a href=""><!--dito ate melai ireremove na ung tenant tapos
-            ung data na ireremove mo di siya permanent madedelete sa tenant history
-        siya mapupuntaaa-->
-                    <input type="submit" value="Remove" >
-                </a>
-                <a href="<?=ROOT?>/tenantinfo">
-                    <input type="submit" value="Back" >
-                </a>
-            </div>
 
->>>>>>> 685288cc89e1253d1c0004cebdfab8f5d30f5c9b
         </div>
         
 

@@ -6,7 +6,7 @@
             <div class = "container">
                 <div class = "totalunits">
                     <div class = "textdash">
-                        <label class = "num">20</label><br><br>
+                        <label class = "num"><?= $totalunit?></label><br><br>
                         <label>Total of Units</label>
                     </div>
                     <div class = "containerbtn">
@@ -17,7 +17,7 @@
                 </div>
                 <div class = "totaltenants">
                     <div class = "textdash">
-                        <label class = "num">20</label><br><br>
+                        <label class = "num"><?= $totaltenant?></label><br><br>
                         <label>Total of Tenants</label>
                     </div>
                     <div class = "containerbtn">
@@ -28,7 +28,7 @@
                 </div>
                 <div class = "totaldue">
                     <div class = "textdash">
-                    <label class = "num">20</label><br><br>
+                    <label class = "num"><?= $totalduedate?></label><br><br>
                     <label>Due Dates <br>Today</label>
                     </div>
                     <div class = "containerbtn">

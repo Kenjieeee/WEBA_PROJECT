@@ -43,3 +43,4 @@ function random_string($length)
 
   return $text;
 }
+

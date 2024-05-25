@@ -4,6 +4,15 @@ class Dashttenants extends Controller
 {
   public function index()
   {
-    $this->view('dashttenants');
+    $tenant = new Tenant();
+    if(isset($_POST['btnsearch'])){
+      $txtsearch = $_POST['txtsearch'];
+      $data = $tenant->search($txtsearch);
+    }else{
+      $data = $tenant->findAll();
+    }
+    $this->view('dashttenants',[
+      'data' =>$data
+    ]);
   }
 }

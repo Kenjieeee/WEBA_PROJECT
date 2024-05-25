@@ -4,6 +4,10 @@ class Paymentrec extends Controller
 {
   public function index()
   {
-    $this->view('paymentrec');
+    $tenant = new Tenant();
+    $data = $tenant->findAll();
+    $this->view('paymentrec',[
+      'data' => $data
+    ]);
   }
 }

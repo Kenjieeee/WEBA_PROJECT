@@ -15,14 +15,16 @@
                     <th>Rent Per Month</th>
                     <th>Click</th>
                 </tr>
+                <?php if(!empty($data)){foreach($data as $row){?>
                 <tr>
                     <!--dito ate ung sinasabi mong mag loloop kapoo-->
-                    <td>1</td>
-                    <td>Kimberly Calumba</td>
-                    <td>05/24/2024</td>
-                    <td>P 5,000</td>
-                    <td><a href="<?=ROOT?>/paymentsubmit"><input type="submit" value="Submit Payment" style = "width: 110px;"></a></td>
+                    <td><?= $row->unitid ?></td>
+                    <td><?= $row->firstname ?> <?= $row->lastname ?></td>
+                    <td><?= $row->duedate ?></td>
+                    <td><?= $row->rentpermonth ?></td>
+                    <td><a href="<?=ROOT?>/paymentsubmit/viewdata/<?=$row->unitid?>"><input type="submit" value="Submit Payment" style = "width: 110px;"></a></td>
                 </tr>
+                <?php }} ?>
             </table>
         </div>
 
