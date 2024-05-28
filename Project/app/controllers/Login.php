@@ -30,13 +30,20 @@ class Login extends Controller
     // $this->view('login', [
     //   'errors' => $errors
     // ]);
+    $show="false";
     if(isset($_POST['login'])){
       if($_POST['username'] == "Admin" && $_POST['password'] == "Admin_123"){
         redirect('dashboard');
+      }else{
+        $show="true";
+        $this->view('login');
       }
     }
     else{
-      $this->view('login');
+     
+      $this->view('login',[
+        'show' => $show
+      ]);
     }
     
   }

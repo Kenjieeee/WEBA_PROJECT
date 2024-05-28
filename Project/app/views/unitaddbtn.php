@@ -17,25 +17,25 @@
                 <input type="text" name="availability" value="Available" placeholder = "Enter unit status" readonly>
                 <br>
                 <label for="">Rent Price: </label>
-                <input type="text" name="rent" value="<?=get_var('rent')?>" placeholder = "Enter unit rent price">
+                <input type="text" name="rent" value="<?=get_var('rent')?>" placeholder = "Enter unit rent price" required>
                 <br>
                 <label for="">Living Room: </label>
-                <input type="text" name="livingroom"  value="<?=get_var('livingroom')?>" placeholder = "Unit have living room?">
+                <input type="text" name="livingroom"  value="<?=get_var('livingroom')?>" placeholder = "Unit have living room?" required>
                 <br>
                 <label for="">Bedroom: </label>
-                <input type="text" name="bedroom" value="<?=get_var('bedroom')?>" placeholder = "Unit have bedroom?">
+                <input type="text" name="bedroom" value="<?=get_var('bedroom')?>" placeholder = "Unit have bedroom?" required>
                 <br>
                 <label for="">Kitchen Room: </label>
-                <input type="text" name="kitchenroom" value="<?=get_var('kitchenroom')?>" placeholder = "Unit have kitchen room?">
+                <input type="text" name="kitchenroom" value="<?=get_var('kitchenroom')?>" placeholder = "Unit have kitchen room?" required>
                 <br>
                 <label for="">Bathroom: </label>
-                <input type="text" name="bathroom" value="<?=get_var('bathroom')?>" placeholder = "Unit have bathroom?">
+                <input type="text" name="bathroom" value="<?=get_var('bathroom')?>" placeholder = "Unit have bathroom?" required>
                 <br>
                 <label for="">Laundry Room: </label>
-                <input type="text" name="laundryroom" value="<?=get_var('laundryroom')?>" placeholder = "Unit have laundry room?">
+                <input type="text" name="laundryroom" value="<?=get_var('laundryroom')?>" placeholder = "Unit have laundry room?" required>
                 <br>
                 <label for="">Land Area: </label>
-                <input type="text" name="squaremeter" value="<?=get_var('squaremeter')?>" placeholder = "Size of land area by m2">
+                <input type="text" name="squaremeter" value="<?=get_var('squaremeter')?>" placeholder = "Size of land area by m2" required>
                 <br>
                 <br>
                 <!--dito ateee add unit lahat ng data na iinput mapupunta sa

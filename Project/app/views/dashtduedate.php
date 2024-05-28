@@ -35,9 +35,9 @@
                 </table>
             </div>
             <br><br>
-            <div class = "backbtn">
+            <div class = "backbtnplain">
                 <a href="<?=ROOT?>/dashboard">
-                    <input type="submit" value="Back">
+                   Back
                 </a>
             </div>
        </div>

@@ -36,7 +36,7 @@
                         <input type="text" name="rentpermonth" value="<?= $row->rentpermonth?>" readonly>
                         <br><br>
                         <label for="">Mode of payment: </label>
-                        <select name="mode" >
+                        <select name="mode" required>
                             <option value=""></option>
                             <option value="cash">Cash</option>
                             <option value="gcash">Gcash</option>
@@ -47,7 +47,7 @@
                         </select>
                         <br><br>
                         <label for="">Month to be paid: </label>
-                        <select name="month" >
+                        <select name="month" required>
                             <option value=""></option>
                             <option value="1">This Month</option>
                             <option value="2">2 Months(Advance 1 Month)</option>
@@ -65,13 +65,15 @@
            
         </div>
         <br><br>
-        <div class = "backbtn">
-           
+        <div class = "backbtn" >
+            <div stlyle = "float: left;">
                 <input type="submit" name="btnpayment" value="Submit Payment" style = "height: 40px;width: 150px;">
-         
-            <a href="<?=ROOT?>/paymentrec">
-                <input type="submit" value="Back" style = "height: 40px;">
-            </a>
+            </div>
+            <div class = "backbtnplain" style = "">
+                <a href="<?=ROOT?>/paymentrec">
+                    Back
+                </a>
+            </div>
         </div>
 
     </form>

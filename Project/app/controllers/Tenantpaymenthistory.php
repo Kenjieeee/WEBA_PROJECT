@@ -2,8 +2,14 @@
 
 class Tenantpaymenthistory extends Controller
 {
-  public function index()
+  public function index($tenantid)
   {
-    $this->view('tenantpaymenthistory');
+    $historytransaction = new Historytransaction();
+    $arr['tenantid'] = $tenantid;
+    $data = $historytransaction->where($arr);
+    $row = $data[0];
+    $this->view('tenantpaymenthistory',[
+      'row' =>$row
+    ]);
   }
 }

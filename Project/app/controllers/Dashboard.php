@@ -8,7 +8,8 @@ class Dashboard extends Controller
     $tenant = new Tenant();
    
 
-    $crntdate = date("m/d/Y");
+    $crntdate = date("m/d/y");
+    
     $arr['duedate'] = $crntdate;
     $totalduedate = (!empty($tenant->where($arr))) ? count($tenant->where($arr)) : 0;
 

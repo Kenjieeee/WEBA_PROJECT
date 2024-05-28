@@ -16,15 +16,15 @@
                     <th>Amount Paid</th>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>06/11/2024</td>
-                    <td>p 5,000</td>                    
+                    <td><?=$row->transacid?></td>
+                    <td><?=$row->duedate?></td>
+                    <td><?=$row->amount?></td>                    
                 </tr>
             </table>
         </div>
         <br><br>
         <div class = "backbtn">
-            <a href="<?=ROOT?>/tenantmoreinfo">
+            <a href="<?=ROOT?>/tenantmoreinfo/<?=$row->unitid?>">
                 <input type="submit" value="Back">
             </a>
         </div>

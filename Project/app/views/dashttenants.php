@@ -35,7 +35,7 @@
                     </table>
                 </div>
                 <br><br>
-                <div class = "backbtn">
+                <div class = "backbtnplain">
                     <a href="<?=ROOT?>/dashboard">
                         Back
                     </a>

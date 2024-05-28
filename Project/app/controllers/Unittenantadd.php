@@ -36,9 +36,9 @@ class Unittenantadd extends Controller
       $arr['downpayment']=$_POST['downpayment'];
       $arr['advance']=$_POST['advance'];
 
-      $balance = floatval($_POST['downpayment']) - floatval($_POST['rentpermonth']);
+      // $balance = floatval($_POST['downpayment']) - floatval($_POST['rentpermonth']);
       $contactNumberPattern = '/^(9\d{9})|(0\d{10})|(\+639\d{9})|(\+639\d{9})|(\+63\s9\d{9})$/';
-      $arr['balance']=$balance;
+      // $arr['balance']=$balance;
       if(!preg_match($contactNumberPattern, $_POST['contactno'])){
         echo '
         <script> 
@@ -67,7 +67,8 @@ class Unittenantadd extends Controller
           alert(" Invalid input for advance payment! ") 
           </script>
         ';
-      }else{
+      }
+      else{
 
       $tenant->insert($arr);
       $unit->update($id,$unitid);

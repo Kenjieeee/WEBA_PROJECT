@@ -22,7 +22,6 @@ class Removetenant extends Controller
        $arr['contactno']=$_POST['contactno'];
        $arr['starteddate']=$_POST['starteddate'];
        $arr['leaveddate']=$leavedate;
-       $arr['balance']=$_POST['balance'];
        $historytenant->insert($arr);
 
        $idtenant = $_POST['tenantid'];   

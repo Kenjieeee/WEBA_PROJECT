@@ -5,9 +5,10 @@ class Dashtduedate extends Controller
   public function index()
   {
     $tenant = new Tenant();
-    $crntdate = date("m/d/Y");
+    $crntdate = date("m/d/y");
    
-    if(isset($_POST['btsearch'])){
+    if(isset($_POST['btnsearch'])){
+   
       $txtsearch = $_POST['txtsearch'];
       $data = $tenant->search_duedate($txtsearch,$crntdate);
     }else{

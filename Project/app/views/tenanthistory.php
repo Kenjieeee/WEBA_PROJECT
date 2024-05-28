@@ -16,7 +16,6 @@
                     <th>Contact #</th>
                     <th>Date Rented</th>
                     <th>Leave Date</th>
-                    <th>Balance</th>
                 </tr>
                 <?php if(!empty($data)){foreach($data as $row){?>
                 <tr>
@@ -25,8 +24,7 @@
                     <td><?= $row->name ?></td>
                     <td><?= $row->contactno?></td>
                     <td><?= $row->starteddate?></td>
-                    <td><?= $row->leaveddate?></td>
-                    <td><?= $row->balance?></td>
+                    <td><?= $row->leaveddate?></td>                 
                 </tr>
                 <?php }}?>
             </table>

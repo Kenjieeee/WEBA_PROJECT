@@ -4,10 +4,10 @@
         <br><br>
         <div class = "labeladd">
             <br>
-            <h2>MORE INFO FOR TENANT <?=$row->tenantid?></h2> <!-- dito atee ung unit num maiiba siya depende sa ivieview mo pong unit -->
+            <h2>UDATE INFO FOR TENANT <?=$row->tenantid?></h2> <!-- dito atee ung unit num maiiba siya depende sa ivieview mo pong unit -->
         </div>
         <div class = "moreinfotextbox">
-            <form action="<?=ROOT?>/Removetenant" method="POST">
+            <form method="POST">
                 <div class = "moreinfoleft">
                     <!--SHOWING DATA ULIT :)-->
                     <input type="hidden" name="unitid" value="<?=$row->unitid?>" >
@@ -18,20 +18,27 @@
                     <label for="">Tenant ID: </label>
                     <input type="text" name="tenantid" value = "<?= $row->tenantid?>" readonly>
                     <br><br>
-                    <label for="">Name: </label>
-                    <input type="text" name="name" value = "<?= $row->firstname?> <?= $row->lastname?>"readonly>
+                    <label for="">Firstname: </label>
+                    <input type="text" name="firstname" value = "<?= $row->firstname?> ">
+                    <br><br>
+                    <label for="">Lastname: </label>
+                    <input type="text" name="lastname" value = "<?= $row->lastname?>">
                     <br><br>
                     <label for="">Civil Status: </label>
-                    <input type="text" name="cstatus" value = "<?= $row->status?>" readonly>
+                    <select name="status" required>
+                        <option value=""></option>
+                        <option <?=($row->status=="Single") ? "selected":""; ?> value="Single">Single</option>
+                        <option  <?=($row->status=="Married") ? "selected":""; ?> value="Married">Married</option>
+                    </select>
                     <br><br>
                     <label for="">Number of Occupants: </label>
-                    <input type="text" name="occupants" value ="<?= $row->occupants?>" readonly>
+                    <input type="text" name="occupants" value ="<?= $row->occupants?>" >
                     <br><br>
                     <label for="">Occupation: </label>
-                    <input type="text" name="occupation" value = "<?=$row->occupation?>"readonly>
+                    <input type="text" name="occupation" value = "<?=$row->occupation?>">
                     <br><br>
                     <label for="">Contact #: </label>
-                    <input type="text" name="contactno" value = "<?=$row->contactno?>" readonly>
+                    <input type="text" name="contactno" value = "<?=$row->contactno?>" >
                     <br><br>
                 </div>
                 <div class = "moreinforight">
@@ -61,24 +68,13 @@
                 </div>
                 <br><br><br><br><br><br><br> 
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>            
-                <div class = "backbtnplain" style = "text-align: center; ">
-                    <a href="<?=ROOT?>/tenantpaymenthistory/<?= $row->tenantid ?>">
-                        <!--dito naman ate melai gagawa pako ng file pero simple lg to
-                    lahat ng transaction lg nung specific id or tenant ung lalabas dine -->
-                       Payment
-                    </a>&emsp;
-                    <!--dito ate melai ireremove na ung tenant tapos
-                ung data na ireremove mo di siya permanent madedelete sa tenant history
-            siya mapupuntaaa-->
-                      <a>
-                        <input type="submit" value="Remove" name="removebtn" style = "background-color: rgb(230, 172, 28, 1.0);border: none; cursor: pointer; text-decoration: none;">
-                      </a>&emsp;
-                    
-                    <a href = "<?=ROOT?>/tenantedit/<?=$row->unitid?>">
-                        Edit
-                    </a>&emsp;
+                <div class = "backbtnplain" style = "text-align: center;">
+                <br>
+                    <a style = "margin: 10px;">
+                        <input type="submit" value="Update" name="btnupdate"style = "background-color: rgb(230, 172, 28, 1.0);border: none; cursor: pointer; text-decoration: none;">
+                    </a>
 
-                    <a href="<?=ROOT?>/tenantinfo">
+                    <a style = "margin: 10px;" href="<?=ROOT?>/tenantmoreinfo/<?=$row->unitid?>">
                         Back
                     </a>
                 </div>

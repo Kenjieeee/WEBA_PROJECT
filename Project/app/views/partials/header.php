@@ -11,6 +11,7 @@
     <div class="sidebarlogo">
       <img src="<?=ROOT?>/assets/images/final_logo.png">
     </div>
+    <hr style = "background-color: black;">
     <div class="sidebarmenu">
       <a href="<?=ROOT?>/dashboard"><br><br>
         <input type="button" value="Dashboard"><br><br><br>

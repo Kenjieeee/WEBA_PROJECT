@@ -43,10 +43,13 @@
                 </div>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <br><br><br><br><br>
-                <br><br>
-                <a href="<?= ROOT ?>/unitviewbtn/<?=$row->unitid?>">
+                <br><br><br>
+                <div class = "backbtnplain">
+                    <a href="<?= ROOT ?>/unitviewbtn/<?=$row->unitid?>">
                         Back
-                </a>
+                    </a>
+                </div>
+                
                 
                 <br><br>
 

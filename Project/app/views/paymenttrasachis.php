@@ -41,7 +41,7 @@
                 </table>
             </div>
             <br><br>
-            <div class = "backbtn">
+            <div class = "backbtnplain">
                 <a href="<?=ROOT?>/paymentrec">
                     Back
                 </a>
